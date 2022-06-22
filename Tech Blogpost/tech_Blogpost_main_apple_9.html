@@ -1,0 +1,496 @@
+<html lang="en">
+
+<head>
+        <!-- google analytics -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TYXJK8NJ14"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-TYXJK8NJ14');
+</script>
+
+    <!-- google analytics -->
+   <!-- google fonts -->
+
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Akshar&display=swap" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@800&family=Poppins:wght@300&display=swap"
+  rel="stylesheet">
+ <!-- google fonts -->
+ <!-- favicon -->
+<link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<!-- favicon -->
+    <!-- tailwind css CDN -->
+    <!-- tailwind ultility script inlcude -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- tailwind ultility script inlcude -->
+    <!-- tailwind.config.js script include -->
+    <script>
+        tailwind.config = {
+        darkMode: 'class',
+          theme: {
+            extend: {
+              colors: {
+                Custom: '#151719',
+              }
+            }
+          }
+        }
+      </script>
+    <!-- tailwind.config.js script include -->
+    <!-- tailwind css CDN-->
+      <!-- alpine js script include -->
+      <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+      <!-- alpine js script include -->
+      <!-- header css -->
+      <link rel="stylesheet" href="../css/landing.css">
+      <!-- header css -->
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>How to Add Speed Dial to Your iPhone - DailyReading™</title>
+ <!-- css for nav bar -->
+ <style>
+  .fav{
+  display: inline;
+  margin-top: -2px;
+  }
+  .lpm {
+   margin-left: auto;
+   margin-right: auto;
+   border: 4px solid rgb(56, 55, 55);
+  }
+
+  #lpm0 {
+   height: 30rem;
+   width: 43rem;
+  }
+
+  #lpm1 {
+   height: 24rem;
+   width: 42rem;
+  }
+
+
+  .dpm {
+   font-family: 'Baloo Bhai 2', cursive;
+   font-size: 3rem;
+   font-weight: bolder;
+   margin-left: 50px;
+   margin-right: 50px;
+   padding: 4px;
+  }
+  
+  .opm {
+   color: rgb(156 163 175);
+   font-family: 'Akshar', sans-serif;
+   font-size: 1.5rem;
+   margin-left: 50px;
+   margin-right: 50px;
+   padding: 4px;
+}
+.cpm {
+ width: 900px;
+ height: 450px;
+ margin-left: 50px;
+ margin-right: 50px;
+ padding: 4px;
+}
+
+  .scroll-hidden::-webkit-scrollbar {
+   height: 0px;
+   background: transparent;
+   /* make scrollbar transparent */
+  }
+.cyan{
+    color: cyan;
+}
+@media (max-width: 760px){
+    .opm{
+        color: rgb(156 163 175);
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .dpm{
+        font-size: 2rem;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+ 
+ </style>
+ <!-- css for nav bar -->
+</head>
+
+<body :class="{'dark': darkMode === true}" class="fd lx uc lr lt" x-data="{'darkMode': false}"
+x-init="darkMode = JSON.parse(localStorage.getItem('darkMode'));
+   $watch('darkMode', value => localStorage.setItem('darkMode', JSON.stringify(value)))">
+    <!-- nav bar start -->
+    <header>
+        <nav class="bg-white dark:bg-Custom">
+            <div class="container px-6 py-3 mx-auto">
+            <div class="flex flex-col md:flex-row md:justify-between md:items-center">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center">
+                        <a class="length font-bold text-black transition-colors duration-200 transform dark:text-white lg:text-3xl hover:text- dark:hover:text"
+                            href="../index.html#home"> <img class="fav"src="../favicon/favicon-32x32.png" alt="Logo">
+                            DailyReading</a>
+                        <!-- Search input on desktop screen -->
+                        <div class="hidden mx-10 md:block">
+                            <div class="relative">
+                                <span class="absolute inset-y-0 left-0 flex items-center pl-3">
+                                    <!-- <svg class="w-5 h-5 text-gray-400" viewBox="0 0 24 24" fill="none">
+                                            <path d="M21 21L15 15M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        </svg> -->
+                                </span>
+                                            <!-- <input type="text" name="k" value="" class="w-full py-2 pl-10 pr-4 text-white bg-white border rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 dark:focus:border-blue-300 focus:outline-none focus:ring focus:ring-opacity-40 focus:ring-blue-300" placeholder="Search""> -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Mobile menu button -->
+                    <div class="flex md:hidden">
+
+                        <!-- Toggle switch begins -->
+                        <div class="flex justify-end items-center space-x-2">
+                         <span class="text-sm text-gray-500 dark:text-white">Light</span>
+                         <label for="toggle" class="w-9 h-5 flex items-center bg-gray-300 rounded-full p-1 cursor-pointer duration-300 ease-in-out dark:bg-gray-600">
+                             <div class="toggle-dot bg-white w-4 h-4 rounded-full shadow-md transform duration-300 ease-in-out dark:translate-x-3"></div>
+                            </label>
+                            <span class="text-sm text-gray-900 dark:text-gray-400">Dark</span>
+                            <input id="toggle" type="checkbox" class="hidden" :value="darkMode" @change="darkMode = !darkMode" />
+                        </div>
+                        <!-- Toggle switch ends -->
+                    </div>
+                </div>
+                <!-- Mobile Menu open: "block", Menu closed: "hidden" -->
+                <div class="items-center md:flex">
+                    <div class="flex flex-col mt-2 md:flex-row md:mt-0 md:mx-1">
+             <!-- Toggle switch begins -->
+             <div class="hiddentogglebutton">
+               <div class="flex justify-end items-center space-x-2">
+                <span class="text-sm text-gray-600 dark:text-gray-300">Light</span>
+                <label for="toggle" class="w-9 h-5 flex items-center bg-gray-300 rounded-full p-1 cursor-pointer duration-300 ease-in-out dark:bg-gray-600">
+                   <div class="toggle-dot bg-gray-100 w-4 h-4 rounded-full shadow-md transform duration-300 ease-in-out dark:translate-x-3"></div>
+                </label>
+                <span class="text-sm text-gray-600 dark:text-gray-300">Dark</span>
+                <input id="toggle" type="checkbox" class="hidden" :value="darkMode" @change="darkMode = !darkMode" />
+             </div>
+            </div>
+             <!-- Toggle switch ends -->
+                        <a class="my-1 text-sm leading-5 text-gray-600 transition-colors duration-200 transform dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 hover:underline md:mx-4 md:my-0"
+                            href="../index.html#home">Home</a>
+                        <a class="my-1 text-sm leading-5 text-gray-600 transition-colors duration-200 transform dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 hover:underline md:mx-4 md:my-0"
+                            href="../index.html#Blog">Blog</a>
+                        <!-- <a class="my-1 text-sm leading-5 text-white transition-colors duration-200 transform dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 hover:underline md:mx-4 md:my-0"
+                            href="#">Compoents</a>
+                        <a class="my-1 text-sm leading-5 text-white transition-colors duration-200 transform dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 hover:underline md:mx-4 md:my-0"
+                            href="#">Courses</a> -->
+                    </div>
+
+                    <!-- <div class="flex items-center py-2 -mx-1 md:mx-0">
+                            <a class="block w-1/2 px-3 py-2 mx-1 text-sm font-medium leading-5 text-center text-white transition-colors duration-200 transform bg-gray-500 rounded-md hover:bg-blue-600 md:mx-2 md:w-auto" href="#">Login</a>
+                            <a class="block w-1/2 px-3 py-2 mx-1 text-sm font-medium leading-5 text-center text-white transition-colors duration-200 transform bg-blue-500 rounded-md hover:bg-blue-600 md:mx-0 md:w-auto" href="#">Join free</a>
+                        </div> -->
+
+                    <!-- Search input on mobile screen -->
+                    <div class="mt-3 md:hidden">
+                        <div class="relative">
+                            <span class="absolute inset-y-0 left-0 flex items-center pl-3">
+                                <!-- <svg class="w-5 h-5 text-gray-400" viewBox="0 0 24 24" fill="none">
+                                        <path d="M21 21L15 15M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </svg> -->
+                            </span>
+
+                            <!-- <input  type="text" class="w-full py-2 pl-10 pr-4 text-white bg-white border rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 dark:focus:border-blue-300 focus:outline-none focus:ring focus:ring-opacity-40 focus:ring-blue-300" placeholder="Search"> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="py-3 mt-3 -mx-3 overflow-y-auto whitespace-nowrap scroll-hidden">
+                <a class="mx-4 text-sm leading-5 text-gray-600 transition-colors duration-200 transform dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 hover:underline md:my-0"
+                    href="Tech_Blogpost_main.html#Tech_Blogpost_main">Technology</a>
+                <a class="mx-4 text-sm leading-5 text-gray-600 transition-colors duration-200 transform dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 hover:underline md:my-0"
+                    href="../Availablesoon.html#Availablesoon">Food & Drink</a>
+                <a class="mx-4 text-sm leading-5 text-gray-600 transition-colors duration-200 transform dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 hover:underline md:my-0"
+                    href="../Availablesoon.html#Availablesoon">Health</a>
+                <a class="mx-4 text-sm leading-5 text-gray-600 transition-colors duration-200 transform dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 hover:underline md:my-0"
+                    href="../Availablesoon.html#Availablesoon">Money</a>
+                <a class="mx-4 text-sm leading-5 text-gray-600 transition-colors duration-200 transform dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 hover:underline md:my-0"
+                    href="../Availablesoon.html#Availablesoon">Household</a>
+                <a class="mx-4 text-sm leading-5 text-gray-600 transition-colors duration-200 transform dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 hover:underline md:my-0"
+                    href="../Availablesoon.html#Availablesoon">Parenting</a>
+                <a class="mx-4 text-sm leading-5 text-gray-600 transition-colors duration-200 transform dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 hover:underline md:my-0"
+                    href="../Availablesoon.html#Availablesoon">Work</a>
+                <a class="mx-4 text-sm leading-5 text-gray-600 transition-colors duration-200 transform dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 hover:underline md:my-0"
+                    href="../Availablesoon.html#Availablesoon">Realtionships</a>
+                <a class="mx-4 text-sm leading-5 text-gray-600 transition-colors duration-200 transform dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 hover:underline md:my-0"
+                    href="../Availablesoon.html#Availablesoon">E-Commerce</a>
+                <a class="mx-4 text-sm leading-5 text-gray-600 transition-colors duration-200 transform dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 hover:underline md:my-0"
+                    href="../Availablesoon.html#Availablesoon">Programming</a>
+                <a class="mx-4 text-sm leading-5 text-gray-600 transition-colors duration-200 transform dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 hover:underline md:my-0"
+                    href="../Availablesoon.html#Availablesoon">Marketing</a>
+                <a class="mx-4 text-sm leading-5 text-gray-600 transition-colors duration-200 transform dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 hover:underline md:my-0"
+                    href="../Availablesoon.html#Availablesoon">Freelancing</a>
+                <a class="mx-4 text-sm leading-5 text-gray-600 transition-colors duration-200 transform dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 hover:underline md:my-0"
+                    href="../Availablesoon.html#Availablesoon">Video Editing</a>
+                <a class="mx-4 text-sm leading-5 text-gray-600 transition-colors duration-200 transform dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 hover:underline md:my-0"
+                    href="../Availablesoon.html#Availablesoon">Auto-Mobiles</a>
+                <a class="mx-4 text-sm leading-5 text-gray-600 transition-colors duration-200 transform dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 hover:underline md:my-0"
+                    href="../Availablesoon.html#Availablesoon">Straming Platforms</a>
+                <a class="mx-4 text-sm leading-5 text-gray-600 transition-colors duration-200 transform dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 hover:underline md:my-0"
+                    href="../Availablesoon.html#Availablesoon">Music</a>
+                <a class="mx-4 text-sm leading-5 text-gray-600 transition-colors duration-200 transform dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 hover:underline md:my-0"
+                    href="../Availablesoon.html#Availablesoon">Software</a>
+                <a class="mx-4 text-sm leading-5 text-gray-600 transition-colors duration-200 transform dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 hover:underline md:my-0" href="#">VS Code</a>
+                    <a class="mx-4 text-sm leading-5 text-gray-600 transition-colors duration-200 transform dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 hover:underline md:my-0" href="#">PHPStorm</a>
+                    <a class="mx-4 text-sm leading-5 text-gray-600 transition-colors duration-200 transform dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 hover:underline md:my-0" href="#">Sublime</a>
+            </div>
+        </div>
+    </nav>
+</header>
+    <!-- nav bar End -->
+    <div class="main bg-white dark:bg-Custom">
+<section class="seperate">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- iwr usebhttps://git.io/debloat | iex -->
+
+    <div>
+        <h1 class="dpm text-black dark:text-gray-300" data-aos="fade-up">All the Hidden iOS 16 Features Worth Knowing About</h1>
+        <p class="opm text-gray-700 dark:text-gray-500" data-aos="fade-up">
+            You wouldn't have known about these features until you tried iOS 16 for yourself.
+            <br>
+            <br>
+            <img class="lpm" src="../images3/tech_Blogpost_main_apple_9_img_1.jpg" alt="No images" data-aos="fade-up" id="lpm0">
+            <br>
+            Apple announced a lot of new iOS 16 features for the iPhone during WWDC. If you were following along, you likely know all about the Lock Screen customization, revamped notification system, and the ability to edit and unsend messages, among other notable new options. However, there are plenty of hidden features Apple didn’t mention, either.
+            <br>
+            <br>
+            I’m going to start with the actual hidden features, the ones Apple flat-out ignored. The company always leaves features out of its keynote (there wouldn’t be enough time to cover them all), but they list most of the new options and changes on the preview site, as you can see here. While there are some excellent new features here that are worth exploring, I want to focus first on the ones that didn’t make this list.
+            <br>
+            <br>
+            These hidden features were all found by beta testers running the first developer beta for iOS 16. If you’re an Apple developer, or you want to become one for a fee, you can try out the software today, too. Otherwise, you can live vicariously through these testers until Apple releases the public beta for free next month.
+        </p>
+        <h3 class="dpm text-black dark:text-gray-300" data-aos="fade-up">Tapback works with SMS now</h3>
+        <p class="opm text-gray-700 dark:text-gray-500" data-aos="fade-up">
+            While I’d never expect Apple to adopt RCS—even though they totally should—iOS 16 does improve group chats with Android phones. As you likely know, when you “like” or “love” a message in one of these group chats, everyone gets the full message instead of the convenient icon you normally see in an iMessage thread. Rather than a “thumbs up” on the message “Want to see a movie tonight?” everyone gets: “Jake liked ‘Want to see a movie tonight?’”
+            <br>
+            <br>
+            This hell is no more, at least not with iOS 16. As long as your iPhone is updated, you’ll see Tapbacks appear on messages rather than the written-out texts everyone hates. Google already implemented this change on Android, so now neither side of the chat should have to deal with this issue (unless your iPhone doesn’t support iOS 16).
+        </p>
+        <h3 class="dpm text-black dark:text-gray-300" data-aos="fade-up">Your iPhone now supports Nintendo Switch controllers</h3>
+        <p class="opm text-gray-700 dark:text-gray-500" data-aos="fade-up">
+            It’s finally happening: With iOS 16, Apple is bringing Switch controller support to the iPhone. And yes, that includes both the Pro Controller and Joy-Cons. Now, if only we’d get an iPhone case with Joy-Con attachments (let me dream).
+        </p>
+        <h3 class="dpm text-black dark:text-gray-300" data-aos="fade-up">Audio source icons appear in Now Playing instead of cast</h3>
+        <p class="opm text-gray-700 dark:text-gray-500" data-aos="fade-up">
+            You might know you can change your iPhone’s audio source from the Now Playing’s widget. With the new update, this icon will show the current audio source instead of a generic casting button, which makes it clear where your audio is outputting. For example, if you’re using your AirPods Pro, you’ll see them appear in this window; if you switch to your HomePod, you’ll see it here instead.
+            <br> 
+            <br>
+            This change is small, but it’s great for quickly identifying where your music is going to before you hit the play button. Plus, you’ll know if your AirPods really disconnected when you took them out of your ears.
+        </p>
+        <h3 class="dpm text-black dark:text-gray-300" data-aos="fade-up">See conversion options by tapping on the metric</h3>
+        <p class="opm text-gray-700 dark:text-gray-500" data-aos="fade-up">
+            When editing a document or note, you can tap on a metric to instantly convert it to something else. For example, if you tap on 50g, you’ll see a conversion to kilograms, pounds, and ounces. If you tap on $100, you’ll see options to convert into a different currency.
+        </p>
+        <h3 class="dpm text-black dark:text-gray-300" data-aos="fade-up">You can automatically change Apple Watch faces with Focus</h3>
+        <p class="opm text-gray-700 dark:text-gray-500" data-aos="fade-up">
+            One of the Lock Screen features mentioned during the keynote was the ability to change Lock Screen setups depending on your Focus. You can have a personal Lock Screen with a particular wallpaper and widget setup, while your work Focus shows a more professional background with work-related widgets.
+            <br>
+            <br>
+            Even though the company didn’t announce it, this same principle applies to Apple Watch—from the Watch app, you’ll be able to choose which watch faces appear during which Focuses.
+        </p>
+        <h3 class="dpm text-black dark:text-gray-300" data-aos="fade-up">Blur your Home Screen wallpaper, not just the Lock Screen</h3>
+        <p class="opm text-gray-700 dark:text-gray-500" data-aos="fade-up">
+            You might have seen iOS 16's option to blur the wallpaper on your Lock Screen, to create a fun depth effect. This option is also available on the Home Screen, as well, allowing you to visually separate your apps from the background.
+        </p>
+        <h3 class="dpm text-black dark:text-gray-300" data-aos="fade-up">iOS 16 can detect duplicate contacts</h3>
+        <p class="opm text-gray-700 dark:text-gray-500" data-aos="fade-up">
+            If your contacts list is like mine, it’s a mess. Chances are you have more than a couple duplicates in there, either because you mistakenly added a contact twice, or you’ve moved phones. IOS 16 will quietly alert you to these duplicates, and will give you the option to delete them if need be.
+        </p>
+        <h3 class="dpm text-black dark:text-gray-300" data-aos="fade-up">Easily delete contacts</h3>
+        <p class="opm text-gray-700 dark:text-gray-500" data-aos="fade-up">
+            If you’ve ever tried to tackle your tangled contacts list, you’ll know it’s a pain. To delete a contact in iOS 15, you have to open it, tap “Edit,” then scroll all the way down to find “Delete Contact.” To do this for each contact you want to remove is a tedious nightmare. Luckily, with iOS 16, there’s a new submenu option to delete contacts. Just press and hold on the contact entry, and you’ll find it.
+        </p>
+        <h3 class="dpm text-black dark:text-gray-300" data-aos="fade-up">Sort Playlists in Apple Music</h3>
+        <p class="opm text-gray-700 dark:text-gray-500" data-aos="fade-up">
+            Playlists are great, but in Apple Music, they’re fixed in the order you created them. If you want to change things up, you’ll have to open the editor and do it by hand. Now, with iOS 16, you can easily sort Playlists by title, artist, album, or release date.
+        </p>
+        <h3 class="dpm text-black dark:text-gray-300" data-aos="fade-up">Spotlight offers information about what’s currently playing</h3>
+        <p class="opm text-gray-700 dark:text-gray-500" data-aos="fade-up">
+            Speaking of music, you’ll see Spotlight offer additional context for the music currently playing on your iPhone. Swipe down on the Home Screen when listening to something, and you’ll see an option to learn more about the artist.
+        </p>
+        <h3 class="dpm text-black dark:text-gray-300" data-aos="fade-up">Type the number of copies you want to print</h3>
+        <p class="opm text-gray-700 dark:text-gray-500" data-aos="fade-up">
+            When printing on iPhone, you can now type the number of copies you want by hand. Previously, you needed to use the dials to choose the number.
+        </p>
+        <h3 class="dpm text-black dark:text-gray-300" data-aos="fade-up">You can AutoFill codes with a third-party authenticator app</h3>
+        <p class="opm text-gray-700 dark:text-gray-500" data-aos="fade-up">
+            In iOS 15, you can use the built-in authenticator app to AutoFill 2FA codes for your accounts. While you could download third-party options, you couldn’t use them for AutoFill. Now, you can.
+        </p>
+        <h3 class="dpm text-black dark:text-gray-300" data-aos="fade-up">You can disable “Lock to End Call”</h3>
+        <p class="opm text-gray-700 dark:text-gray-500" data-aos="fade-up">
+            In some ways, it’s a simple operation: When you’re done with your phone call, press the Side button to hang up. Easy! Too easy, maybe: If you’ve ever accidentally hung up on someone because you pressed the Side button, you can now disable the option in iOS 16's Phone settings.
+        </p>
+        <h3 class="dpm text-black dark:text-gray-300" data-aos="fade-up">Share an eSim number to another iPhone</h3>
+        <p class="opm text-gray-700 dark:text-gray-500" data-aos="fade-up">
+            If you want to move an eSim number to another iPhone, you need to do so from a restore, which isn’t particularly convenient. However, it seems iOS 16 introduces an easy way to transfer a number to another iPhone that’s nearby. It’s early stages, so we don’t yet know exactly how this works, but it’s a cool addition.
+        </p>
+        <h3 class="dpm text-black dark:text-gray-300" data-aos="fade-up">Instead of “No Signal,” you’ll see SOS</h3>
+        <p class="opm text-gray-700 dark:text-gray-500" data-aos="fade-up">
+            This change is a tiny one, but, apparently, you’ll now see “SOS” appear at the top of your display when you have no bars. The reason for the change isn’t clear, but one Redditor suggests perhaps it’s to indicate emergency services still work on your iPhone, even if you can’t place normal calls.
+        </p>
+        <h3 class="dpm text-black dark:text-gray-300" data-aos="fade-up">You can change fitness goals on your iPhone</h3>
+        <p class="opm text-gray-700 dark:text-gray-500" data-aos="fade-up">
+            Another small feature: You can now change your Apple Watch fitness goals on the iPhone’s Activity app. Previously, this option was only available on the watch itself.
+        </p>
+        <h3 class="dpm text-black dark:text-gray-300" data-aos="fade-up">Hidden features Apple did acknowledge</h3>
+        <p class="opm text-gray-700 dark:text-gray-500" data-aos="fade-up">
+            I want to quickly run through a handful of fun features that Apple did acknowledge in its full feature preview, but that might’ve gone under the radar of most people watching WWDC news:
+            <br>
+            • There’s now a haptic keyboard.
+            <br>
+            • You can enable Live Transcriptions during FaceTime calls.
+            <br>
+            • You can recover recently deleted messages for up to 30 days.
+            <br>
+            • You can lock your Hidden and Recent albums in Photos.
+            <br>
+            • You can now manage your wifi passwords.
+            <br>
+            • You can hang up phone calls with “Hey Siri.”
+            <br>
+            • You can pinch notifications to switch between expanded list view, stacked view, or count view.
+            <br>
+            • iOS asks for permission to paste from another app.
+        </p>
+        </div>
+   </section>
+   <aside class="seperate2">
+    <div class="sm nd au hk">
+        <div class="am dh te un">
+            <h2 class="M2 text-black dark:text-white" data-aos="fade-up">Recommend Post's</h2>
+        </div>
+        <div class="sb nd pk">
+                <div class="iv om dn dl dc oa dis">
+                    <article class="ip oo ik" data-aos="fade-up">
+                        <header>
+                            <a class="ic re" href="tech-Blogpost_1.html">
+                                <figure class="tq ig fe o_ oq"> <img class="tj tz su ik an p o lz ci cl"
+                                        src="../images2/tech_Blogpost_1_img_2.jpg" width="352" height="198"
+                                        alt="News 01"> </figure>
+                            </a>
+                            <div class="rd">
+                                <ul class="ip ou fb fk nl">
+                                    <li class="nc"> <a class="id fp ll ah aa oj uh ch lz cr cf"
+                                            href="#0">Product</a> </li>
+                                    <li class="nc"> <a class="id fp ll ah aa oj uv cd lz cr cf"
+                                            href="#0">Engineering</a> </li>
+                                </ul>
+                            </div>
+                            <h3 class="h4 ra text-gray-700 dark:text-white"> <a class="c_ lz cr cf hover:text-black dark:hover:text-gray-200"
+                                    href="tech-Blogpost_1.html">Why Graphics Card Prices Are
+                                    Falling (and How Much They Cost Now)</a> </h3>
+                        </header>
+                        <p class="fm li sz text-gray-500 dark:text-gray-400">This is great news for gaming enthusiasts, but why are prices
+                            finally falling? Global semiconductor ...................</p>
+                    </article>
+                    <article class="ip oo ik" data-aos="fade-up" data-aos-delay="200">
+                        <header>
+                            <a class="ic re" href="tech_Blogpost_main_computing_1.html">
+                                <figure class="tq ig fe o_ oq"> <img class="tj tz su ik an p o lz ci cl"
+                                        src="../images2/tech_Blogpost_main_computing_1_img_1.jpg" width="352" height="198"
+                                        alt="News 02"> </figure>
+                            </a>
+                            <div class="rd">
+                                <ul class="ip ou fb fk nl">
+                                    <li class="nc"> <a class="id fp ll ah aa oj um cv lz cr cf"
+                                            href="#0">Desing</a> </li>
+                                    <li class="nc"> <a class="id fp ll ah aa oj uv cd lz cr cf"
+                                            href="#0">Engineering</a> </li>
+                                </ul>
+                            </div>
+                            <h3 class="h4 ra text-gray-700 dark:text-white"> <a class="c_ lz cr cf hover:text-black dark:hover:text-gray-200"
+                                    href="tech_Blogpost_main_computing_1.html">Your Lenovo is vulnerable to new malware attack</a> </h3>
+                        </header>
+                        <p class="fm li sz text-gray-500 dark:text-gray-400">Millions of Lenovo laptops may be at risk of rare but serious malware attacks. Lenovo laptop users are advised to install critical security patches immediately..........</p>
+                    </article>
+                     <article class="ip oo ik" data-aos="fade-up" data-aos-delay="400">
+                        <header>
+                            <a class="ic re" href="tech_Blogpost_main_computing_2.html">
+                                <figure class="tq ig fe o_ oq"> <img class="tj tz su ik an p o lz ci cl"
+                                        src="../images2/tech_Blogpost_main_computing_2_img_5.jpg" width="352" height="198"
+                                        alt="News 03"> </figure>
+                            </a>
+                            <div class="rd">
+                                <ul class="ip ou fb fk nl">
+                                    <li class="nc"> <a class="id fp ll ah aa oj uh ch lz cr cf"
+                                            href="#0">Product</a> </li>
+                                    <li class="nc"> <a class="id fp ll ah aa oj ug cm lz cr cf"
+                                            href="#0">Tutorials and articles</a> </li>
+                                </ul>
+                            </div>
+                            <h3 class="h4 ra text-gray-700 dark:text-white"> <a class="c_ lz cr cf hover:text-black dark:hover:text-gray-200"
+                                    href="tech_Blogpost_main_computing_2.html">The easiest ways to install and update all your Windows applications</a> </h3>
+                        </header>
+                        <p class="fm li sz text-gray-500 dark:text-gray-400">You spend hours on your iPhone every day, and a large portion of
+                            that time is spent typing. By now you've .................</p>
+                    </article>
+                </div>
+            </div>
+        </div>
+</div>
+</div>
+</aside>
+     <!-- Footer stars -->
+
+
+
+     <footer class="p-4 bg-white dark:bg-Custom md:flex md:items-center md:justify-between md:p-6 dark:bg-Custom">
+        <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2022 <a href="../index.html#home"
+                class="hover:underline">DailyReading™</a>. All Rights Reserved.
+        </span>
+        <ul class="flex flex-wrap items-center mt-3 text-sm text-gray-500 dark:text-gray-400 sm:mt-0">
+            <li>
+                <a href="../index.html#home" class="mr-4 hover:underline md:mr-6 ">Home</a>
+            </li>
+            <li>
+                <a href="../index.html#Blog" class="mr-4 hover:underline md:mr-6">Blog</a>
+            </li>
+            <li>
+                <!-- <a href="#" class="mr-4 hover:underline md:mr-6">Licensing</a>
+            </li>
+            <li>
+                <a href="#" class="hover:underline">Contact</a> -->
+            </li>
+        </ul>
+    </footer>
+
+
+
+    <!-- Footer ends -->
+
+   <!-- include -->
+   <script src="../main.6413841b964205fd2bc6.js"></script>
+   <!-- include -->
+</body>

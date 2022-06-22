@@ -1,0 +1,419 @@
+<html lang="en">
+
+<head>
+        <!-- google analytics -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TYXJK8NJ14"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-TYXJK8NJ14');
+</script>
+
+    <!-- google analytics -->
+   <!-- google fonts -->
+
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Akshar&display=swap" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@800&family=Poppins:wght@300&display=swap"
+  rel="stylesheet">
+ <!-- google fonts -->
+ <!-- favicon -->
+<link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<!-- favicon -->
+    <!-- tailwind css CDN -->
+    <!-- tailwind ultility script inlcude -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- tailwind ultility script inlcude -->
+    <!-- tailwind.config.js script include -->
+    <script>
+        tailwind.config = {
+        darkMode: 'class',
+          theme: {
+            extend: {
+              colors: {
+                Custom: '#151719',
+              }
+            }
+          }
+        }
+      </script>
+    <!-- tailwind.config.js script include -->
+    <!-- tailwind css CDN-->
+      <!-- alpine js script include -->
+      <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+      <!-- alpine js script include -->
+      <!-- header css -->
+      <link rel="stylesheet" href="../css/landing.css">
+      <!-- header css -->
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Don't Buy an Apple Watch Series 3 (and What to Buy Instead) - DailyReading™</title>
+ <!-- css for nav bar -->
+ <style>
+  .fav{
+  display: inline;
+  margin-top: -2px;
+  }
+  .lpm {
+   margin-left: auto;
+   margin-right: auto;
+   border: 4px solid rgb(56, 55, 55);
+  }
+
+  #lpm0 {
+   height: 22rem;
+   width: 40rem;
+  }
+
+
+
+  .dpm {
+   font-family: 'Baloo Bhai 2', cursive;
+   font-size: 3rem;
+   font-weight: bolder;
+   margin-left: 50px;
+   margin-right: 50px;
+   padding: 4px;
+  }
+  
+  .opm {
+   color: rgb(156 163 175);
+   font-family: 'Akshar', sans-serif;
+   font-size: 1.5rem;
+   margin-left: 50px;
+   margin-right: 50px;
+   padding: 4px;
+}
+.cpm {
+ width: 900px;
+ height: 450px;
+ margin-left: 50px;
+ margin-right: 50px;
+ padding: 4px;
+}
+
+  .scroll-hidden::-webkit-scrollbar {
+   height: 0px;
+   background: transparent;
+   /* make scrollbar transparent */
+  }
+.cyan{
+    color: cyan;
+}
+@media (max-width: 760px){
+    .opm{
+        color: rgb(156 163 175);
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .dpm{
+        font-size: 2rem;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+ 
+ </style>
+ <!-- css for nav bar -->
+</head>
+
+<body :class="{'dark': darkMode === true}" class="fd lx uc lr lt" x-data="{'darkMode': false}"
+x-init="darkMode = JSON.parse(localStorage.getItem('darkMode'));
+   $watch('darkMode', value => localStorage.setItem('darkMode', JSON.stringify(value)))">
+    <!-- nav bar start -->
+    <header>
+        <nav class="bg-white dark:bg-Custom">
+            <div class="container px-6 py-3 mx-auto">
+            <div class="flex flex-col md:flex-row md:justify-between md:items-center">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center">
+                        <a class="length font-bold text-black transition-colors duration-200 transform dark:text-white lg:text-3xl hover:text- dark:hover:text"
+                            href="../index.html#home"> <img class="fav"src="../favicon/favicon-32x32.png" alt="Logo">
+                            DailyReading</a>
+                        <!-- Search input on desktop screen -->
+                        <div class="hidden mx-10 md:block">
+                            <div class="relative">
+                                <span class="absolute inset-y-0 left-0 flex items-center pl-3">
+                                    <!-- <svg class="w-5 h-5 text-gray-400" viewBox="0 0 24 24" fill="none">
+                                            <path d="M21 21L15 15M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        </svg> -->
+                                </span>
+                                            <!-- <input type="text" name="k" value="" class="w-full py-2 pl-10 pr-4 text-white bg-white border rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 dark:focus:border-blue-300 focus:outline-none focus:ring focus:ring-opacity-40 focus:ring-blue-300" placeholder="Search""> -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Mobile menu button -->
+                    <div class="flex md:hidden">
+
+                        <!-- Toggle switch begins -->
+                        <div class="flex justify-end items-center space-x-2">
+                         <span class="text-sm text-gray-500 dark:text-white">Light</span>
+                         <label for="toggle" class="w-9 h-5 flex items-center bg-gray-300 rounded-full p-1 cursor-pointer duration-300 ease-in-out dark:bg-gray-600">
+                             <div class="toggle-dot bg-white w-4 h-4 rounded-full shadow-md transform duration-300 ease-in-out dark:translate-x-3"></div>
+                            </label>
+                            <span class="text-sm text-gray-900 dark:text-gray-400">Dark</span>
+                            <input id="toggle" type="checkbox" class="hidden" :value="darkMode" @change="darkMode = !darkMode" />
+                        </div>
+                        <!-- Toggle switch ends -->
+                    </div>
+                </div>
+                <!-- Mobile Menu open: "block", Menu closed: "hidden" -->
+                <div class="items-center md:flex">
+                    <div class="flex flex-col mt-2 md:flex-row md:mt-0 md:mx-1">
+             <!-- Toggle switch begins -->
+             <div class="hiddentogglebutton">
+               <div class="flex justify-end items-center space-x-2">
+                <span class="text-sm text-gray-600 dark:text-gray-300">Light</span>
+                <label for="toggle" class="w-9 h-5 flex items-center bg-gray-300 rounded-full p-1 cursor-pointer duration-300 ease-in-out dark:bg-gray-600">
+                   <div class="toggle-dot bg-gray-100 w-4 h-4 rounded-full shadow-md transform duration-300 ease-in-out dark:translate-x-3"></div>
+                </label>
+                <span class="text-sm text-gray-600 dark:text-gray-300">Dark</span>
+                <input id="toggle" type="checkbox" class="hidden" :value="darkMode" @change="darkMode = !darkMode" />
+             </div>
+            </div>
+             <!-- Toggle switch ends -->
+                        <a class="my-1 text-sm leading-5 text-gray-600 transition-colors duration-200 transform dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 hover:underline md:mx-4 md:my-0"
+                            href="../index.html#home">Home</a>
+                        <a class="my-1 text-sm leading-5 text-gray-600 transition-colors duration-200 transform dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 hover:underline md:mx-4 md:my-0"
+                            href="../index.html#Blog">Blog</a>
+                        <!-- <a class="my-1 text-sm leading-5 text-white transition-colors duration-200 transform dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 hover:underline md:mx-4 md:my-0"
+                            href="#">Compoents</a>
+                        <a class="my-1 text-sm leading-5 text-white transition-colors duration-200 transform dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 hover:underline md:mx-4 md:my-0"
+                            href="#">Courses</a> -->
+                    </div>
+
+                    <!-- <div class="flex items-center py-2 -mx-1 md:mx-0">
+                            <a class="block w-1/2 px-3 py-2 mx-1 text-sm font-medium leading-5 text-center text-white transition-colors duration-200 transform bg-gray-500 rounded-md hover:bg-blue-600 md:mx-2 md:w-auto" href="#">Login</a>
+                            <a class="block w-1/2 px-3 py-2 mx-1 text-sm font-medium leading-5 text-center text-white transition-colors duration-200 transform bg-blue-500 rounded-md hover:bg-blue-600 md:mx-0 md:w-auto" href="#">Join free</a>
+                        </div> -->
+
+                    <!-- Search input on mobile screen -->
+                    <div class="mt-3 md:hidden">
+                        <div class="relative">
+                            <span class="absolute inset-y-0 left-0 flex items-center pl-3">
+                                <!-- <svg class="w-5 h-5 text-gray-400" viewBox="0 0 24 24" fill="none">
+                                        <path d="M21 21L15 15M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </svg> -->
+                            </span>
+
+                            <!-- <input  type="text" class="w-full py-2 pl-10 pr-4 text-white bg-white border rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 dark:focus:border-blue-300 focus:outline-none focus:ring focus:ring-opacity-40 focus:ring-blue-300" placeholder="Search"> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="py-3 mt-3 -mx-3 overflow-y-auto whitespace-nowrap scroll-hidden">
+                <a class="mx-4 text-sm leading-5 text-gray-600 transition-colors duration-200 transform dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 hover:underline md:my-0"
+                    href="Tech_Blogpost_main.html#Tech_Blogpost_main">Technology</a>
+                <a class="mx-4 text-sm leading-5 text-gray-600 transition-colors duration-200 transform dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 hover:underline md:my-0"
+                    href="../Availablesoon.html#Availablesoon">Food & Drink</a>
+                <a class="mx-4 text-sm leading-5 text-gray-600 transition-colors duration-200 transform dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 hover:underline md:my-0"
+                    href="../Availablesoon.html#Availablesoon">Health</a>
+                <a class="mx-4 text-sm leading-5 text-gray-600 transition-colors duration-200 transform dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 hover:underline md:my-0"
+                    href="../Availablesoon.html#Availablesoon">Money</a>
+                <a class="mx-4 text-sm leading-5 text-gray-600 transition-colors duration-200 transform dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 hover:underline md:my-0"
+                    href="../Availablesoon.html#Availablesoon">Household</a>
+                <a class="mx-4 text-sm leading-5 text-gray-600 transition-colors duration-200 transform dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 hover:underline md:my-0"
+                    href="../Availablesoon.html#Availablesoon">Parenting</a>
+                <a class="mx-4 text-sm leading-5 text-gray-600 transition-colors duration-200 transform dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 hover:underline md:my-0"
+                    href="../Availablesoon.html#Availablesoon">Work</a>
+                <a class="mx-4 text-sm leading-5 text-gray-600 transition-colors duration-200 transform dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 hover:underline md:my-0"
+                    href="../Availablesoon.html#Availablesoon">Realtionships</a>
+                <a class="mx-4 text-sm leading-5 text-gray-600 transition-colors duration-200 transform dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 hover:underline md:my-0"
+                    href="../Availablesoon.html#Availablesoon">E-Commerce</a>
+                <a class="mx-4 text-sm leading-5 text-gray-600 transition-colors duration-200 transform dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 hover:underline md:my-0"
+                    href="../Availablesoon.html#Availablesoon">Programming</a>
+                <a class="mx-4 text-sm leading-5 text-gray-600 transition-colors duration-200 transform dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 hover:underline md:my-0"
+                    href="../Availablesoon.html#Availablesoon">Marketing</a>
+                <a class="mx-4 text-sm leading-5 text-gray-600 transition-colors duration-200 transform dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 hover:underline md:my-0"
+                    href="../Availablesoon.html#Availablesoon">Freelancing</a>
+                <a class="mx-4 text-sm leading-5 text-gray-600 transition-colors duration-200 transform dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 hover:underline md:my-0"
+                    href="../Availablesoon.html#Availablesoon">Video Editing</a>
+                <a class="mx-4 text-sm leading-5 text-gray-600 transition-colors duration-200 transform dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 hover:underline md:my-0"
+                    href="../Availablesoon.html#Availablesoon">Auto-Mobiles</a>
+                <a class="mx-4 text-sm leading-5 text-gray-600 transition-colors duration-200 transform dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 hover:underline md:my-0"
+                    href="../Availablesoon.html#Availablesoon">Straming Platforms</a>
+                <a class="mx-4 text-sm leading-5 text-gray-600 transition-colors duration-200 transform dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 hover:underline md:my-0"
+                    href="../Availablesoon.html#Availablesoon">Music</a>
+                <a class="mx-4 text-sm leading-5 text-gray-600 transition-colors duration-200 transform dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 hover:underline md:my-0"
+                    href="../Availablesoon.html#Availablesoon">Software</a>
+                <a class="mx-4 text-sm leading-5 text-gray-600 transition-colors duration-200 transform dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 hover:underline md:my-0" href="#">VS Code</a>
+                    <a class="mx-4 text-sm leading-5 text-gray-600 transition-colors duration-200 transform dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 hover:underline md:my-0" href="#">PHPStorm</a>
+                    <a class="mx-4 text-sm leading-5 text-gray-600 transition-colors duration-200 transform dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 hover:underline md:my-0" href="#">Sublime</a>
+            </div>
+        </div>
+    </nav>
+</header>
+    <!-- nav bar End -->
+    <div class="main bg-white dark:bg-Custom">
+<section class="seperate">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- iwr usebhttps://git.io/debloat | iex -->
+
+    <div>
+        <h1 class="dpm text-black dark:text-gray-300" data-aos="fade-up">Don't Buy an Apple Watch Series 3 (and What to Buy Instead)</h1>
+        <p class="opm text-gray-700 dark:text-gray-500" data-aos="fade-up">
+            Whatever you do, don't buy Apple's cheapest smartwatch.
+            <br>
+            <br>
+            In the market for your first Apple Watch? You might be tempted to go for the company’s cheapest offering. If you don’t know whether you’ll enjoy having a mini iPhone strapped to your wrist, the $199 cost of an Apple Watch Series 3 might look more tempting than dropping $399 on the latest Series 7. If this is the train of thought you’re on, I implore you to derail it: Do not buy a Series 3 in 2022.
+            <br>
+            <img class="lpm" src="../images3/tech_Blogpost_main_apple_2_img_2.jpg" alt="No images" data-aos="fade-up" id="lpm0">
+            <br>
+            It’s not that the Series 3 is a bad watch. Apple still supports it with the latest version of watchOS; though it will be slower than a top of the line model, it is still perfectly functional; and while it lacks the latest bells and whistles, it probably offers all the features you’re looking for. But it is fundamentally flawed in a specific way: storage space.
+            <br>
+            <br>
+            The Series 3 only ships with 8GB of internal storage, about what you’d expect from an iPod in the mid-2000s. That might not sound like a deal-breaker if you’re not planning to download a bunch of songs, podcasts, or photos to your watch. However, that 8GB of storage will still be a pain in your ass when it comes time to update your device.
+            <br>
+            <br>
+            Don’t get me wrong: It’s great Apple still supports a watch released in 2017. I’m all for product longevity. I believe you can keep an old Apple Watch running even longer just by replacing the battery. However, in 2022, watchOS updates are too big for the 8GB Series 3 to handle. In order to update, Apple forces you to unpair your watch from your iPhone, erase the contents of your watch, then install the update.
+            <br>
+            <br>
+            And since the Series 3 is so old, these updates also take forever. My fiancée updated hers recently, and after wading through the unpairing process, the update itself took around two hours just to download to the watch. I even tried disabling Bluetooth on her iPhone, which can speed up the time it takes to download the update, but it didn’t have much of an effect. After waiting even longer for the update to finally install, she then needed to restore from her previous backup in order to use her watch as it was before installing the update.
+            <br>
+            <br>
+            It’s possibly the worst process for updating a device—certainly an Apple one–that I’ve encountered. That doesn’t mean she’s going to ditch it—the Series 3 still tracks workouts, accepts messages and notifications, and sets alarms, along with all of the other basic things you’d expect of a smartwatch. The obnoxious updates are just something she’ll have to deal with on occasion.
+            <br>
+            <br>
+        </p>
+        <h3 class="dpm text-black dark:text-gray-300" data-aos="fade-up">What to buy instead of the Apple Watch Series 3</h3>       
+        <p class="opm text-gray-700 dark:text-gray-500" data-aos="fade-up">
+            New buyers are in a different boat. Sure, $200 is a good price for a functioning Apple Watch, but for $70 more, you can buy the Apple Watch SE, which nets you a whole lot more watch without the frustrating update issue. The SE comes with a modern S5 processor, a bigger and better display, an improved heart rate monitor, and fall detection, among other new features. Oh, and you can install updates without resetting the entire watch first, so that’s a plus.
+            <br>
+            <br>
+            I can’t in good conscience recommend you buy a product you expect to use for years when there’s something so fundamentally flawed about it, especially when there’s another affordable option that will serve you much better.
+            <br>
+            <br>
+            I would not be surprised to see Apple drop the Series 3 from the lineup this year. Come WWDC 2022, The company will unveil watchOS 9, and, if it chooses to, it may stop software support for this aging model. There’s no guarantee that will happen—Apple still supports the iPad Air 2, which came out in 2014—but it’s something to think about before you buy.
+        </p>
+        </div>
+   </section>
+   <aside class="seperate2">
+    <div class="sm nd au hk">
+        <div class="am dh te un">
+            <h2 class="M2 text-black dark:text-white" data-aos="fade-up">Recommend Post's</h2>
+        </div>
+        <div class="sb nd pk">
+                <div class="iv om dn dl dc oa dis">
+                    <article class="ip oo ik" data-aos="fade-up">
+                        <header>
+                            <a class="ic re" href="tech-Blogpost_1.html">
+                                <figure class="tq ig fe o_ oq"> <img class="tj tz su ik an p o lz ci cl"
+                                        src="../images2/tech_Blogpost_1_img_2.jpg" width="352" height="198"
+                                        alt="News 01"> </figure>
+                            </a>
+                            <div class="rd">
+                                <ul class="ip ou fb fk nl">
+                                    <li class="nc"> <a class="id fp ll ah aa oj uh ch lz cr cf"
+                                            href="#0">Product</a> </li>
+                                    <li class="nc"> <a class="id fp ll ah aa oj uv cd lz cr cf"
+                                            href="#0">Engineering</a> </li>
+                                </ul>
+                            </div>
+                            <h3 class="h4 ra text-gray-700 dark:text-white"> <a class="c_ lz cr cf hover:text-black dark:hover:text-gray-200"
+                                    href="tech-Blogpost_1.html">Why Graphics Card Prices Are
+                                    Falling (and How Much They Cost Now)</a> </h3>
+                        </header>
+                        <p class="fm li sz text-gray-500 dark:text-gray-400">This is great news for gaming enthusiasts, but why are prices
+                            finally falling? Global semiconductor ...................</p>
+                    </article>
+                    <article class="ip oo ik" data-aos="fade-up" data-aos-delay="200">
+                        <header>
+                            <a class="ic re" href="tech_Blogpost_main_computing_1.html">
+                                <figure class="tq ig fe o_ oq"> <img class="tj tz su ik an p o lz ci cl"
+                                        src="../images2/tech_Blogpost_main_computing_1_img_1.jpg" width="352" height="198"
+                                        alt="News 02"> </figure>
+                            </a>
+                            <div class="rd">
+                                <ul class="ip ou fb fk nl">
+                                    <li class="nc"> <a class="id fp ll ah aa oj um cv lz cr cf"
+                                            href="#0">Desing</a> </li>
+                                    <li class="nc"> <a class="id fp ll ah aa oj uv cd lz cr cf"
+                                            href="#0">Engineering</a> </li>
+                                </ul>
+                            </div>
+                            <h3 class="h4 ra text-gray-700 dark:text-white"> <a class="c_ lz cr cf hover:text-black dark:hover:text-gray-200"
+                                    href="tech_Blogpost_main_computing_1.html">Your Lenovo is vulnerable to new malware attack</a> </h3>
+                        </header>
+                        <p class="fm li sz text-gray-500 dark:text-gray-400">Millions of Lenovo laptops may be at risk of rare but serious malware attacks. Lenovo laptop users are advised to install critical security patches immediately..........</p>
+                    </article>
+                     <article class="ip oo ik" data-aos="fade-up" data-aos-delay="400">
+                        <header>
+                            <a class="ic re" href="tech_Blogpost_main_computing_2.html">
+                                <figure class="tq ig fe o_ oq"> <img class="tj tz su ik an p o lz ci cl"
+                                        src="../images2/tech_Blogpost_main_computing_2_img_5.jpg" width="352" height="198"
+                                        alt="News 03"> </figure>
+                            </a>
+                            <div class="rd">
+                                <ul class="ip ou fb fk nl">
+                                    <li class="nc"> <a class="id fp ll ah aa oj uh ch lz cr cf"
+                                            href="#0">Product</a> </li>
+                                    <li class="nc"> <a class="id fp ll ah aa oj ug cm lz cr cf"
+                                            href="#0">Tutorials and articles</a> </li>
+                                </ul>
+                            </div>
+                            <h3 class="h4 ra text-gray-700 dark:text-white"> <a class="c_ lz cr cf hover:text-black dark:hover:text-gray-200"
+                                    href="tech_Blogpost_main_computing_2.html">The easiest ways to install and update all your Windows applications</a> </h3>
+                        </header>
+                        <p class="fm li sz text-gray-500 dark:text-gray-400">You spend hours on your iPhone every day, and a large portion of
+                            that time is spent typing. By now you've .................</p>
+                    </article>
+                </div>
+            </div>
+        </div>
+</div>
+</div>
+</aside>
+     <!-- Footer stars -->
+
+
+
+     <footer class="p-4 bg-white dark:bg-Custom md:flex md:items-center md:justify-between md:p-6 dark:bg-Custom">
+        <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2022 <a href="../index.html#home"
+                class="hover:underline">DailyReading™</a>. All Rights Reserved.
+        </span>
+        <ul class="flex flex-wrap items-center mt-3 text-sm text-gray-500 dark:text-gray-400 sm:mt-0">
+            <li>
+                <a href="../index.html#home" class="mr-4 hover:underline md:mr-6 ">Home</a>
+            </li>
+            <li>
+                <a href="../index.html#Blog" class="mr-4 hover:underline md:mr-6">Blog</a>
+            </li>
+            <li>
+                <!-- <a href="#" class="mr-4 hover:underline md:mr-6">Licensing</a>
+            </li>
+            <li>
+                <a href="#" class="hover:underline">Contact</a> -->
+            </li>
+        </ul>
+    </footer>
+
+
+
+    <!-- Footer ends -->
+
+   <!-- include -->
+   <script src="../main.6413841b964205fd2bc6.js"></script>
+   <!-- include -->
+</body>
